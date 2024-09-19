@@ -1,11 +1,11 @@
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    max-width: 800px;
+    color: #e1e1e1;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4f4f9;
+    background-color: #1e1e1e;
 }
 
 header {
@@ -14,17 +14,17 @@ header {
     align-items: center;
     margin-bottom: 30px;
     padding: 10px 0;
-    border-bottom: 2px solid #e6e6e6;
+    border-bottom: 2px solid #333;
 }
 
 h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #1a8917;
+    color: #f7931a;
 }
 
 button {
-    background-color: #1a8917;
+    background-color: #f7931a;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -35,37 +35,45 @@ button {
 }
 
 button:hover {
-    background-color: #0f730c;
+    background-color: #e67e22;
     transform: scale(1.05);
 }
 
+#posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 #posts article {
-    border-bottom: 1px solid #e6e6e6;
-    padding: 20px 0;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #posts article:hover {
-    background-color: #e9f5e9;
+    background-color: #3a3a3a;
 }
 
 #posts h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #333;
+    color: #f7931a;
 }
 
 #posts .meta {
     font-size: 0.9em;
-    color: #757575;
+    color: #b0b0b0;
     margin-bottom: 10px;
 }
 
 #newPostForm {
-    background-color: #ffffff;
+    background-color: #2c2c2c;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,20 +82,25 @@ button:hover {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #e1e1e1;
 }
 
 #editor {
     height: 300px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #e1e1e1;
 }
 
 .ql-editor {
     font-size: 1.1em;
     line-height: 1.5;
+    color: #e1e1e1;
 }
 
 @media (max-width: 600px) {
